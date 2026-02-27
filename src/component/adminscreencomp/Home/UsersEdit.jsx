@@ -56,6 +56,11 @@ export const AdminUserEditComponent = ({ updateHandler }) => {
                         <input onChange={(e) => handleChangeHandler(e, 'address')} value={isData.address} type="text" />
                     </div>
 
+                    <div className={styles.inputCards}>
+                        <label>Pin</label>
+                        <input onChange={(e) => handleChangeHandler(e, 'pin')} value={isData.pin} type="text" />
+                    </div>
+
                     <h3 className={styles.sectionTitle}>Verification Status</h3>
                     {[
                         'emailVerified',
