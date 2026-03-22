@@ -50,12 +50,12 @@ export const AdminUserEditComponent = ({ updateHandler, }) => {
         let imgUrl2
 
         const config = {
-            dirName:process.env.REACT_APP_DIRNAME,
-            bucketName:process.env.REACT_APP_BUCKETNAME,
-            region:process.env.REACT_APP_REGION,
-            accessKeyId:process.env.REACT_APP_ACCESSKEYID,
-            secretAccessKey: process.env.REACT_APP_SECRETACCESSKEY 
-            
+            dirName: process.env.REACT_APP_S3_DIR_NAME,
+            bucketName: process.env.REACT_APP_S3_BUCKET_NAME,
+            region: process.env.REACT_APP_S3_REGION,
+            accessKeyId: process.env.REACT_APP_S3_ACCESS_KEY_ID,
+            secretAccessKey: process.env.REACT_APP_S3_SECRET_ACCESS_KEY
+
         }
 
         let upload1 = async () => {
@@ -466,12 +466,12 @@ export const AdminUserEditComponent = ({ updateHandler, }) => {
                                 Passport
                             </label>
 
-                            <input placeholder='pick photo' type='file' onChange={changePhotoHandler} style={{ width: '200px', height: '40px' }}/>
+                            <input placeholder='pick photo' type='file' onChange={changePhotoHandler} style={{ width: '200px', height: '40px' }} />
 
                         </div>
 
 
-                        <img src={!photo?isData.passportUrl:photoDataURL} />
+                        <img src={!photo ? isData.passportUrl : photoDataURL} />
                     </div>
 
                     <div className={styles.inputCards}>
@@ -480,10 +480,10 @@ export const AdminUserEditComponent = ({ updateHandler, }) => {
                                 ProfilePhoto
                             </label>
 
-                            <input placeholder='pick photo' type='file' onChange={changeProfilePhotoHandler} style={{ width: '200px', height: '40px' }}/>
+                            <input placeholder='pick photo' type='file' onChange={changeProfilePhotoHandler} style={{ width: '200px', height: '40px' }} />
                         </div>
 
-                        <img   src={!profilePhoto?isData.profilePhotoUrl:profilePhotoDataURL} />
+                        <img src={!profilePhoto ? isData.profilePhotoUrl : profilePhotoDataURL} />
                     </div>
 
 
