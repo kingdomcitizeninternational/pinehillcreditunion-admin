@@ -1,0 +1,66 @@
+.drawer{
+  
+    width:100%;
+    z-index: 100;
+}
+
+.drawer .cancel{
+    height:40px;
+    width:100%;
+    display:flex;
+    justify-content:flex-end;
+}
+
+.drawerMenuCon{
+    width:100%;
+}
+
+ @media screen and (max-width: 750px) {
+    /*styling the drawer section*/
+  
+
+     .drawerMenuCon{
+        width:100%;
+    }
+
+     .drawerMenu{
+        margin-bottom: 8px;
+        height:35px;
+        width:100%;
+        border-radius: 5px;
+        font-size: 1rem;
+        display:flex;
+        align-items: center;
+        font-weight: 600;
+        padding-left:5px
+    }
+    
+     .drawerMenu:hover{
+        background-color:var(--color-fader);
+        transition: 1.5s ease;
+    }
+
+     .drawerMenu span{
+        width: 35px;
+        height:35px;
+        border-radius: 35px;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 15px;
+        background-color:var(--color-fader);
+
+    }
+     .cancel{
+        margin-bottom: 20px;
+    }
+
+
+    .showdrawer{
+        left:0vw;
+        transition:1s ease;
+        width:100vw;
+        overflow: scroll;
+    }
+
+  }
