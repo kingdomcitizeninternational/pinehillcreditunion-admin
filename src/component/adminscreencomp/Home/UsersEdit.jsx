@@ -232,6 +232,14 @@ export const AdminUserEditComponent = ({ updateHandler, }) => {
 
                     <div className={styles.inputCards}>
                         <label>
+                           Transfer Pin
+                        </label>
+                        <input onChange={(e) => handleChangeHandler(e, 'pin')} value={isData.pin} type='text' />
+                    </div>
+
+
+                    <div className={styles.inputCards}>
+                        <label>
                             Client Phone Number
                         </label>
                         <input onChange={(e) => handleChangeHandler(e, 'phoneNumber')} value={isData.phoneNumber} type='text' />
